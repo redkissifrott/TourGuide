@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/gpsUtil.jar!/" />
+      <root url="jar://$PROJECT_DIR$/RewardCentral.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TripPricer.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
