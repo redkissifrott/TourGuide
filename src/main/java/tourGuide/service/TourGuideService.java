@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Random;
 import java.util.UUID;
@@ -89,6 +90,7 @@ public class TourGuideService {
 	}
 
 	public VisitedLocation trackUserLocation(User user) {
+		Locale.setDefault(new Locale("en", "US"));
 		VisitedLocation visitedLocation = gpsUtil
 				.getUserLocation(user.getUserId());
 		user.addToVisitedLocations(visitedLocation);

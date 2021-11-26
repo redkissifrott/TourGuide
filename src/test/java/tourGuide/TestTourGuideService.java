@@ -4,7 +4,6 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import java.util.List;
-import java.util.Locale;
 import java.util.UUID;
 
 import org.junit.Ignore;
@@ -24,7 +23,7 @@ public class TestTourGuideService {
 
 	@Test
 	public void getUserLocation() {
-		Locale.setDefault(new Locale("en", "US"));
+		// Locale.setDefault(new Locale("en", "US"));
 		GpsUtil gpsUtil = new GpsUtil();
 		RewardsService rewardsService = new RewardsService(gpsUtil,
 				new RewardCentral());
